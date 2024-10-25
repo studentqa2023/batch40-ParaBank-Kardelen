@@ -1,0 +1,382 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-25T02:36:54.124Z",
+        "line": 16,
+        "name": "As a user, I want to login to the Parabank site with valid credantials, so that I can use the bank website",
+        "description": "",
+        "id": "parabank-login-testing;as-a-user--i-want-to-login-to-the-parabank-site-with-valid-credantials--so-that-i-can-use-the-bank-website;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1024600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Open the browser",
+            "match": {
+              "location": "com.stepdef.StepDef.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "pass the Parabank URL \"https://parabank.parasoft.com/parabank/index.htm\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://parabank.parasoft.com/parabank/index.htm\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.stepdef.StepDef.pass_the_parabank_url(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter the username \"Kardelen1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kardelen1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.stepdef.StepDef.enter_the_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter the password \"Martinez.1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Martinez.1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.stepdef.StepDef.enter_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on login button",
+            "match": {
+              "location": "com.stepdef.StepDef.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Validate login is successful",
+            "match": {
+              "location": "com.stepdef.StepDef.validate_login_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functional"
+          },
+          {
+            "name": "@TC1"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-10-25T02:36:54.152Z",
+        "line": 29,
+        "name": "As a user,I want to login with only email but no password so that an error message is displayed",
+        "description": "",
+        "id": "parabank-login-testing;as-a-user-i-want-to-login-with-only-email-but-no-password-so-that-an-error-message-is-displayed;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Open the browser",
+            "match": {
+              "location": "com.stepdef.StepDef.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1006900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "pass the Parabank URL \"https://parabank.parasoft.com/parabank/index.htm\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://parabank.parasoft.com/parabank/index.htm\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.stepdef.StepDef.pass_the_parabank_url(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Enter the username \"Kardelen1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kardelen1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.stepdef.StepDef.enter_the_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "click on login button",
+            "match": {
+              "location": "com.stepdef.StepDef.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Validate error message is displayed",
+            "match": {
+              "location": "com.stepdef.StepDef.getError()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Quit all browser",
+            "match": {
+              "location": "com.stepdef.StepDef.tearDown()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functional"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Parabank login testing",
+    "description": "Description: User should already have an account in Parabank",
+    "id": "parabank-login-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/login.feature",
+    "tags": [
+      {
+        "name": "@functional",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-25T02:36:54.168Z",
+        "line": 18,
+        "name": "As a user when you logged in, I want to logout from the Parabank site with valid credantials, so that my account info is safe",
+        "description": "",
+        "id": "parabank-logout-testing;as-a-user-when-you-logged-in--i-want-to-logout-from-the-parabank-site-with-valid-credantials--so-that-my-account-info-is-safe;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Open the browser",
+            "match": {
+              "location": "com.stepdef.StepDef.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "pass the Parabank URL \"https://parabank.parasoft.com/parabank/index.htm\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://parabank.parasoft.com/parabank/index.htm\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.stepdef.StepDef.pass_the_parabank_url(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter the username \"Kardelen1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kardelen1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.stepdef.StepDef.enter_the_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter the password \"Martinez.1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Martinez.1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.stepdef.StepDef.enter_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on login button",
+            "match": {
+              "location": "com.stepdef.StepDef.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on logout button",
+            "match": {
+              "location": "com.stepdef.StepDef.clickLogout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Validate logout is successful",
+            "match": {
+              "location": "com.stepdef.StepDef.validate_logout_is_succesful()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Quit all browser",
+            "match": {
+              "location": "com.stepdef.StepDef.tearDown()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functional"
+          },
+          {
+            "name": "@TC1"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Parabank logout testing",
+    "description": "Description: User should have a login account",
+    "id": "parabank-logout-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/logout.feature",
+    "tags": [
+      {
+        "name": "@functional",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
